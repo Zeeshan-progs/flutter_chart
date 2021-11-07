@@ -1,7 +1,7 @@
 # flutter_chart
 flutter chart using syncfusion package 
-# source code will be there soon
-# watch now  https://youtu.be/ZwqcyWIaghc
+# source code [Day 1 Line Chart](https://github.com/Zeeshan-progs/flutter_chart/tree/main/lib/chart_type)
+# [Watch on Youtube ](https://youtu.be/ZwqcyWIaghc)
 
 
 
