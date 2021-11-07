@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chart/chart_type/day1_line_chart.dart';
+import 'package:flutter_chart/Ep%201%20Line%20Chart/day1_line_chart.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

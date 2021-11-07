@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chart/const.dart';
-import 'package:flutter_chart/mode_data/line_chart_model_data.dart';
+import 'package:flutter_chart/Ep%201%20Line%20Chart/line_chart_model_data.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class LineChart extends StatefulWidget {
