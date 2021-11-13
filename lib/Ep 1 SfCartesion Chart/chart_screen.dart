@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chart/const.dart';
-import 'package:flutter_chart/Ep%201%20Line%20Chart/line_chart_model_data.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+
+import 'model_and_data.dart';
 
 class LineChart extends StatefulWidget {
   const LineChart({Key? key}) : super(key: key);
