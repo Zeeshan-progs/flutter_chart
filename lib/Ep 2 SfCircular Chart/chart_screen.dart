@@ -33,6 +33,7 @@ class _CircularChartState extends State<CircularChart> {
             isResponsive: true,
             overflowMode: LegendItemOverflowMode.wrap,
             toggleSeriesVisibility: true,
+            
           ),
           series: <PieSeries<CircularChartModel, String>>[
             PieSeries(
