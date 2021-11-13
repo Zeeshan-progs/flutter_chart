@@ -11,8 +11,6 @@ class CircularChart extends StatefulWidget {
   @override
   _CircularChartState createState() => _CircularChartState();
 }
-
-//android
 class _CircularChartState extends State<CircularChart> {
   @override
   Widget build(BuildContext context) {
