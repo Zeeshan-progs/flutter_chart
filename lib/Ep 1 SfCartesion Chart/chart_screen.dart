@@ -63,6 +63,7 @@ class _LineChartState extends State<LineChart> {
                 dataLabelArgs.color = Colors.red;
               },
               primaryXAxis: NumericAxis(
+                
                 interval: 20,
               ),
               tooltipBehavior: _toolTip,
