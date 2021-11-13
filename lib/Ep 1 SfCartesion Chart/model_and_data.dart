@@ -19,3 +19,4 @@ List<LineChartModel> lineChartList = [
   LineChartModel(days: 85, sales: 1234.5),
   LineChartModel(days: 95, sales: 5634.5),
 ];
+
