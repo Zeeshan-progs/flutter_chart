@@ -2,7 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chart/Ep%201%20Line%20Chart/day1_line_chart.dart';
+
+import 'Ep 1 SfCartesion Chart/chart_screen.dart';
+import 'Ep 2 SfCircular Chart/chart_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,9 +20,13 @@ class HomeScreen extends StatelessWidget {
               children: [
                 button(
                   context,
-                  image: 'assets/line_chart.png',
                   widget: const LineChart(),
-                  text: 'Line Chart',
+                  text: 'Episode 1 SfCartesianChart',
+                ),
+                button(
+                  context,
+                  widget: const CircularChart(),
+                  text: 'Episode 2 SfCircularChart ',
                 ),
               ],
             ),
@@ -32,44 +38,40 @@ class HomeScreen extends StatelessWidget {
 
   Widget button(
     BuildContext context, {
-    required String image,
     required Widget widget,
     required String text,
   }) {
-    return Card(
-      elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(19),
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 15.0,
+        vertical: 10,
       ),
-      color: Color.fromARGB(
-        Random().nextInt(125),
-        Random().nextInt(125),
-        Random().nextInt(125),
-        Random().nextInt(125),
-      ).withOpacity(.5),
-      child: ListTile(
+      child: Card(
+        elevation: 6,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(19),
         ),
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (_) => widget,
-            ),
-          );
-        },
-        leading: Image.asset(
-          image,
-          fit: BoxFit.cover,
-          height: 100,
-          filterQuality: FilterQuality.high,
-          width: 100,
-        ),
-        title: Row(
-          children: [
-            // Icon(CupertinoIcons.chart),
-            Text(
+        color: Color.fromARGB(
+          Random().nextInt(100),
+          Random().nextInt(150),
+          Random().nextInt(225),
+          Random().nextInt(25),
+        ).withOpacity(.2),
+        child: ListTile(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(19),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => widget,
+              ),
+            );
+          },
+          title: Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: Text(
               text,
               style: const TextStyle(
                 fontSize: 20,
@@ -77,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
